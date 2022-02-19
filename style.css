@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(24, 24, 24);
+    color: #0085FF;
+}
+nav{
+    width: 250px;
+    height: 100%;
+    background-color: #0c0c0c;
+    font-size: 20px;
+    color: #0085FF;
+    display: flex;
+    align-items: center;
+}
+nav .content{
+    margin-left: 40px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+nav .links{
+    line-height: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+.logo{
+    text-decoration: none;
+    color: #0085FF;
+}
+nav .links img{
+    display: none;
+}
+nav .logo{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.container{
+    width: 100%;
+    padding: 50px;
+}
+.container .content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.adjust{
+    width: 100%;
+}
+.second .volume{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.second .speed{
+    width: 100%;
+}
+.second input{
+    width: 100%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+.name{
+    font-size: 20px;
+}
+
+
+
+.volume{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.volume input{
+    width: 70%;
+}
+.volume img{
+    width: 20px;
+    height: 20px;
+}
+.speed{
+    display: flex;
+    justify-content: space-evenly;
+}
+.speed input{
+    width: 70%;
+}
+.speed img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+svg{
+    cursor: pointer;
+}
+button.circle{
+    background-color: #e2e2e2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img{
+    width: 15px;
+    height: 15px;
+}
+
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.loopPath{
+    fill: #e2e2e2;
+}
+.loopPath.color{
+    fill: #0085FF;
+}
+.likePath{
+    fill: #e2e2e2;
+}
+.likePath.color{
+    fill: #0085FF;
+}
+
+
+
+
+
+
+.image{
+    width: 600px;
+    height: 350px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 10px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    body{
+        flex-direction: column;
+    }
+    nav{
+        height: 50px;
+        width: auto;
+        justify-content: center;
+    }
+    nav .content{
+        flex-direction: row;
+        margin: 0;
+        height: auto;
+        width: 80%;
+    }
+    nav .links{
+        display: flex;
+    }
+    nav .links div{
+        display: none;
+    }
+    nav .links img{
+        display: block;
+        margin-left: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .image{
+        width: 300px;
+        height: 150px;
+    }
+    .controls{
+        width: 250px;
+    }
+}
